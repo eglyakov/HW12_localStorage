@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    background-color: rgb(216, 216, 216);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.contacts_enter,
+.contacts {
+    padding: 2%;
+    margin: 30px auto;
+    width: 90%;
+    max-width: 700px;
+    font-size: 18px;
+
+    background-color: rgb(63, 63, 63);
+    border-radius: 15px;
+    box-shadow: 0 0 10px #000;
+}
+
+.contacts_enter {
+    width: 500px;
+}
+
+.contacts_enter .form_title,
+.header_name {
+    margin-bottom: 2%;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.contacts_form {
+    margin-bottom: 4%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+
+    border: 2px solid #fff;
+    border-radius: 15px;
+}
+
+.contacts_form .input_name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.contacts_enter input,
+.contacts_form input {
+    padding: 5px 10px;
+    margin: 5px 0 15px;
+    width: 100%;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.contacts_form .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts_enter button,
+.contacts_form button {
+    width: 230px;
+    padding: 10px 0 8px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.contacts_form button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.contacts_add {
+    background-color: rgb(107, 199, 89);
+    border: none;
+    border-bottom: 2px solid rgb(76, 158, 59) ;
+    color: #fff;
+}
+
+.contacts_clear {
+    background-color: rgb(240, 69, 69);
+    border: none;
+    border-bottom: 2px solid rgb(182, 52, 52);
+    color: #fff;
+}
+
+.contacts_enter button,
+.contacts_logout {
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-bottom: 2px solid rgb(167, 167, 167);
+}
+
+.contacts_list ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.contacts_item {
+    margin-bottom: 2%;
+    padding: 2%;
+    border: 2px solid #fff;
+    border-radius: 15px;
+
+    position: relative;
+}
+
+.contacts_item:hover .button_del {
+    display: block;
+}
+
+.contacts_item:hover .contacts_name,
+.contacts_item:hover .contacts_phone,
+.contacts_item:hover .contacts_email {
+    width: calc(100% - 45px);
+}
+
+.contacts_item .button_del {
+    display: none;
+    padding: 15px;
+    height: 100%;
+    font-size: 22px;
+    border: none;
+    border-radius: 0 12px 12px 0;
+    background-color: rgb(240, 69, 69);
+    color: #fff;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+ 
+.contacts_name,
+.contacts_phone,
+.contacts_email {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.contacts_name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contacts_email {
+    color: rgba(212, 212, 212, 0.925);
+}
